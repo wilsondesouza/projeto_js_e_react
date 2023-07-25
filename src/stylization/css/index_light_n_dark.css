@@ -451,8 +451,7 @@ html {
  .dark .carditems {
     background-color: white;
     border-radius: 2%;
-    color: black
-    
+    color: black 
  }
  .dark .footer {
     background-color: #212529;
