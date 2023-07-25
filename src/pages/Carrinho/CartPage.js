@@ -5,6 +5,9 @@ import { Modal, Button } from 'react-bootstrap';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import '../../stylization/css/index_light_n_dark.css';
+import mastercard from '../../stylization/icons/mastercard.png';
+import visa from '../../stylization/icons/visa.png';
+
 
 export default function CartPage({ cartItems, removeFromCart, increaseQuantity, decreaseQuantity }) {
   const [paymentInfo, setPaymentInfo] = useState({
@@ -89,7 +92,10 @@ export default function CartPage({ cartItems, removeFromCart, increaseQuantity, 
                         <label class="form-label" for="typeText">Número do Cartão</label>
                         <input type="password" id="cardNumber" name="cardNumber" value={paymentInfo.cardNumber} onChange={handleInputChange} class="form-control form-control-lg" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;" style={{ size: 17, minlength: 19, maxlength: 19 }} />
                       </div>
-                      <img src="https://img.icons8.com/color/48/000000/visa.png" alt="visa" style={{ width: 64 }} />
+                      <div className='bandeira'>
+                      <img src={visa} alt="visa" style={{ width: 64 }} />
+                      <img src={mastercard} alt="mastercard" style={{ width: 64 }} />
+                      </div>
                     </div>
 
                     <div class="d-flex justify-content-between align-items-center mb-4">

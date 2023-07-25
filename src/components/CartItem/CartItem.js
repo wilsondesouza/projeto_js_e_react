@@ -20,16 +20,16 @@ function CartItem({ item, removeFromCart, increaseQuantity, decreaseQuantity }) 
                       </div>
                       <div class="cart_item_quantity cart_info_col">
                         <div class="cart_item_title">Quantidade</div>
-                        <button onClick={() => increaseQuantity(item.id)}>+</button>
-                        <div class="cart_item_text">{item.quantity}</div>
-                        <button className='menos' onClick={() => decreaseQuantity(item.id)}>-</button>
+                        <button className="button-18" onClick={() => increaseQuantity(item.id)}>+</button>   
+                        <div class="cart_item_text" style={{marginTop:12}}>{item.quantity}</div>
+                        <button className="menos" onClick={() => decreaseQuantity(item.id)}>-</button>
                       </div>
                       <div class="cart_item_price cart_info_col">
                         <div class="cart_item_title">Preço</div>
                         <div class="cart_item_text">R$ {item.price}</div>
                       </div>
                       <div>
-                        <button className='remove' onClick={() => removeFromCart(item.id)}>Remover</button>
+                        <button class="button-30" onClick={() => removeFromCart(item.id)}>Remover</button>
                       </div>
                       <div class="cart_item_total cart_info_col">
                         <div class="cart_item_title">Subtotal</div>
