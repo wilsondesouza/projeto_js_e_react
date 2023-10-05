@@ -5,7 +5,7 @@ import img3 from '../../stylization/imgs/developer.jpeg';
 import git from '../../stylization/icons/github.svg'
 import fb from '../../stylization/icons/facebook.svg';
 import lkd from '../../stylization/icons//linkedin.svg';
-import '../../stylization/css/index_light_n_dark.css';
+import '../../stylization/css/style.css';
 import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
 

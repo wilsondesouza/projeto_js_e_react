@@ -1,6 +1,6 @@
 import Alert from 'react-bootstrap/Alert';
 import ReactDOM from 'react-dom';
-import '../../stylization/css/index.css'
+import '../../stylization/css/style.css'
 
 export default function Notification({ message, onClose }) {
     return ReactDOM.createPortal(

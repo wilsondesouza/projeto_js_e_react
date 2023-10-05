@@ -5,8 +5,17 @@ export default function ThemeContext() {
     const toggleTheme = () => {
         if (theme === 'light') {
             setTheme('dark');
+            document.documentElement.style.setProperty('--background-light', '#212529');
+            document.documentElement.style.setProperty('--background-dark', '#CECECE');
+            document.documentElement.style.setProperty('--backgroundButton-light-hover', 'gold');
+            document.documentElement.style.setProperty('--backgroundButton-dark-hover', '#8a2be2');
+
         } else {
             setTheme('light');
+            document.documentElement.style.setProperty('--background-light', '#CECECE');
+            document.documentElement.style.setProperty('--background-dark', '#212529');
+            document.documentElement.style.setProperty('--backgroundButton-light-hover', '#8a2be2');
+            document.documentElement.style.setProperty('--backgroundButton-dark-hover', 'gold');
         }
     };
     useEffect(() => {

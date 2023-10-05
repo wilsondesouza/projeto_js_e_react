@@ -8,7 +8,7 @@ import Footer from "./partials/Footer/Footer";
 import { ToastContainer } from 'react-toastify';
 import { addToCartType, removeFromCartType, increaseQuantityType, decreaseQuantityType } from './store/types'
 import reducer from './store/reducer';
-import './stylization/css/index_light_n_dark.css';
+import './stylization/css/style.css';
 import ThemeContext from './contexts/ThemeContext';
 
 const initialState = {

@@ -4,7 +4,7 @@ import CartItem from '../../components/CartItem/CartItem';
 import { Modal, Button } from 'react-bootstrap';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import '../../stylization/css/index_light_n_dark.css';
+import '../../stylization/css/style.css';
 import mastercard from '../../stylization/icons/mastercard.png';
 import visa from '../../stylization/icons/visa.png';
 
@@ -71,10 +71,10 @@ export default function CartPage({ cartItems, removeFromCart, increaseQuantity, 
         ) : (
           <p>O carrinho está vazio.</p>
         )}
-        <div class="order_total">
+        <div class="total">
           <div class="order_total_content text-md-right">
-            <div class="order_total_title">Total Final:</div>
-            <div class="order_total_amount">R$ {getTotal().toFixed(2)}</div>
+            <div class="titulo_total">Total Final:</div>
+            <div class="total_compra">R$ {getTotal().toFixed(2)}</div>
           </div>
         </div>
       </div>

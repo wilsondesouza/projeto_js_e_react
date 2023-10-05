@@ -1,0 +1,557 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+}
+
+h2,
+a.produtos {
+    display: grid;
+    justify-content: center;
+    text-decoration: none;
+    color: black
+}
+
+.grid-container {
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas:
+        'menu'
+        'carrosel'
+        'main'
+        'footer';
+    min-height: 100vh;
+    justify-content: center;
+}
+
+/* Reset CSS */
+
+
+/* Navegação e Carrosel */
+.menu {
+    margin-top: -1vh;
+    z-index: 2;
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    height: 9vh;
+
+}
+
+.menu h2 {
+    margin-left: -15vh;
+    margin-top: 1vh;
+}
+
+div#basic-navbar-nav {
+    margin-left: 1vh;
+    margin-top: 3vh;
+}
+
+.carrosel {
+    margin-top: 5vh;
+
+}
+
+button.btncont {
+    height: 40px;
+    margin-left: 200vh;
+    margin-top: -1.8vh;
+    position: fixed;
+    width: 40px;
+    z-index: 1000;
+    border: none;
+    background: transparent;
+}
+
+/* Navegação e Carrosel */
+
+
+/* Sobre Nós e Time */
+.about-us img {
+    height: 40vh;
+    width: 100%;
+}
+
+.card {
+    --bs-card-border-color: white;
+    --bs-card-border-width: 0%
+}
+
+.card-body {
+    margin-left: -3vh;
+    ;
+}
+
+.time.card-group {
+    margin-left: 28vh;
+}
+
+.time p {
+    margin-left: 8vh;
+}
+
+.time a {
+    margin-left: 5vh;
+}
+
+.time img {
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    border-radius: 40%;
+    width: 30vh;
+    height: 30vh;
+}
+
+.developer.card a,
+.director.card a,
+.designer.card a {
+    display: inline-flex;
+    border-radius: 65%;
+    width: 4vh;
+    justify-content: center;
+}
+
+/* Sobre Nós e Time */
+
+
+/* Produtos */
+.products .bag {
+    position: fixed;
+    z-index: 1000;
+}
+
+.products .card {
+    margin-top: 2rem;
+    margin-left: 4rem;
+    margin-right: 3.5rem;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.caixas.card-container.row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.carditems.card-title.h5 {
+    display: grid;
+    justify-content: center;
+    margin-left: 3vh;
+}
+
+img.card-img-top {
+    margin-left: 3vh;
+    width: 35vh;
+    height: 45vh;
+}
+
+button.add.btn.btn-primary {
+    margin-top: 1vh;
+    margin-left: 10.8vh;
+    margin-bottom: -1vh;
+}
+
+button.details.btn.btn-secondary {
+    margin-top: 1vh;
+    margin-left: 9.03vh;
+    margin-bottom: -1vh;
+}
+
+/* Produtos */
+
+
+/* Carrinho */
+.cart_item_quantity.cart_info_col {
+    display: grid;
+    justify-items: center;
+}
+
+.order_total_content.text-md-right {
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    list-style: none;
+}
+
+.carrinho h2 {
+    margin-top: 1vh;
+}
+
+.cart_section {
+    width: 100%;
+    padding-bottom: 1rem
+}
+
+.cart_list {
+    border: 2px solid var(--backgroundButton-light-hover);
+    background-color: #fff;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, .1);
+}
+
+.cart_item {
+    width: 100%;
+    padding: 5vh;
+    padding-right: 10vh
+}
+
+.cart_item_image {
+    width: 17.68vh;
+    height: 17.68vh;
+    float: left
+}
+
+.cart_item_image img {
+    max-width: 100%;
+    margin-top: -4.2vh;
+}
+
+.cart_item_name {
+    margin-left: 10vh
+}
+
+.cart_item_title {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5)
+}
+
+.cart_item_name.cart_info_col {
+    width: 29.8vh;
+}
+
+.cart_item_text {
+    font-size: 18px;
+    margin-top: 4.65vh;
+}
+
+.total {
+    border: solid 2px var(--backgroundButton-light-hover);
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    margin-bottom: -12vh;
+}
+
+.titulo_total {
+    display: inline-block;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.5);
+    line-height: 60px
+}
+
+.total_compra {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 26px;
+    line-height: 60px
+}
+
+.quant {
+    margin-top: 3vh;
+    display: flex;
+
+}
+
+.mais,
+.menos {
+    align-items: center;
+    border: 0;
+    border-radius: 10px;
+    color: #fff;
+    min-height: 30px;
+    vertical-align: middle;
+}
+
+.mais {
+    background-color: #0a66c2;
+    width: 4vh;
+    height: 3vh;
+    margin-right: .5vh;
+    margin-top: 1.5vh;
+}
+
+.menos {
+    background-color: #c22f0a;
+    width: 4vh;
+    height: 3vh;
+    margin-left: .5vh;
+    margin-top: 1.5vh;
+}
+
+.remove {
+    align-items: center;
+    border-width: 0;
+    box-shadow: 0 2px 4px rgba(45, 35, 66, .4), 0 7px 13px -3px rgba(45, 35, 66, .3), inset 0 -3px 0 #d6d6e7;
+    font-family: JetBrains Mono, monospace;
+    font-size: 18px;
+    height: 2rem;
+    margin-top: 3.2rem;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.cart_button_clear {
+    display: inline-block;
+    border: none;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 48px;
+    color: rgba(0, 0, 0, 0.5);
+    background: #FFFFFF;
+    border: solid 1px #b2b2b2;
+    padding-left: 35px;
+    padding-right: 35px;
+    outline: none;
+    cursor: pointer;
+    margin-right: 26px
+}
+
+.checkout {
+    text-align: center;
+    margin-bottom: -13vh;
+}
+
+.form-control-lg {
+    border: solid 1px blueviolet;
+    margin-left: 1.5vh;
+}
+
+.bandeira {
+    margin-bottom: -1.8rem;
+    margin-right: -2.8vh;
+}
+
+/* Carrinho */
+
+
+/* Footer */
+footer.footer {
+    display: grid;
+    justify-items: center;
+}
+
+a.zap.text-decoration-none {
+    margin-left: 3vh;
+}
+
+.footer a {
+    margin-left: 1vh;
+    color: #128C7E;
+}
+
+.footer .insta {
+    color: #833AB4;
+}
+
+.footer .fb {
+    color: #4267B2;
+}
+
+/* Footer */
+
+
+/* Temas Claro e Escuro */
+:root {
+    --background-light: #CECECE;
+    --background-dark: #212529;
+    --backgroundButton-light-hover: #8a2be2;
+    --backgroundButton-dark-hover: gold;
+}
+
+body {
+    background-color: var(--background-light);
+    transition: .2s ease-in-out, background-color .7s ease-in-out, color .7s ease-in-out;
+}
+
+.menu {
+    background-color: var(--background-light);
+    transition: .2s ease-in-out, background-color .7s ease-in-out, color .7s ease-in-out;
+}
+
+h2,
+p,
+.h5 {
+    color: var(--background-dark);
+    transition: .2s ease-in-out, background-color .7s ease-in-out, color .7s ease-in-out;
+}
+
+.menu h2,
+.trio p:hover,
+.about-us p:hover {
+    color: var(--backgroundButton-light-hover);
+    transition: .2s ease-in-out, background-color .7s ease-in-out, color .7s ease-in-out;
+}
+
+.menu h2:hover {
+    color: var(--background-dark);
+    transition: .2s ease-in-out, background-color .7s ease-in-out, color .7s ease-in-out;
+}
+
+button.btncont a {
+    color: var(--background-dark)
+}
+
+button.btncont a:hover {
+    color: var(--backgroundButton-light-hover);
+    transition: .2s ease-in-out, background-color .7s ease-in-out, color .7s ease-in-out;
+}
+
+.developer.card,
+.director.card,
+.designer.card {
+    background-color: transparent;
+}
+
+.developer.card a,
+.director.card a,
+.designer.card a {
+    background-color: var(--backgroundButton-light-hover);
+    transition: .2s ease-in-out, background-color .7s ease-in-out, color .7s ease-in-out;
+}
+
+.developer.card a:hover,
+.director.card a:hover,
+.designer.card a:hover {
+    background-color: var(--background-light);
+    transition: .2s ease-in-out, background-color .7s ease-in-out, color .7s ease-in-out;
+}
+
+.products .card {
+    background-color: var(--background-dark);
+    color: var(--background-light);
+    transition: .2s ease-in-out, background-color .7s ease-in-out, color .7s ease-in-out;
+
+}
+
+.carditems.card-title.h5 {
+    color: var(--background-light);
+    transition: .2s ease-in-out, background-color .7s ease-in-out, color .7s ease-in-out;
+}
+
+.modal-body p {
+    color: black
+}
+
+.button {
+    color: var(--background-light);
+    background-color: var(--background-dark);
+    transition: .2s ease-in-out, background-color .7s ease-in-out, color .7s ease-in-out;
+}
+
+.button:hover {
+    background-color: var(--backgroundButton-light-hover);
+    transition: .2s ease-in-out, background-color .7s ease-in-out, color .7s ease-in-out;
+}
+button.navbar-toggler.collapsed, button.navbar-toggler {
+    background-color: white;
+}
+
+/* Responsividade - Mobile */
+@media (min-width: 1024px) {
+    .grid-container {
+        grid-template-columns: auto 1fr 1fr 1fr auto auto;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas:
+            'menu  menu menu menu menu menu'
+            'carrosel carrosel carrosel carrosel carrosel carrosel'
+            'main main main main main  main'
+            'footer footer footer footer footer footer';
+    }
+}
+
+@media (max-width: 1023px) {
+    .menu {
+        display: grid;
+        justify-content: start;
+    }
+    .menu h2 {
+        margin-left: 0vh;
+    }
+    button.btncont {
+        height: 40px;
+        margin-left: 40vh;
+        margin-top: -1.5vh;
+        position: fixed;
+        width: 40px;
+        z-index: 1000;
+        border: none;
+        background: transparent;
+    }
+    button.navbar-toggler {
+        margin-left: 25vh;
+        margin-top: -5.5vh;
+    }
+    div#basic-navbar-nav {
+        margin-left: -4vh;
+        margin-top: 2vh;
+    }
+    .trio.me-auto.navbar-nav {
+        margin-left: 6vh;
+        background-color: var(--background-dark);
+        border-radius: 20%;
+        width: 40vh;
+    }
+    .trio.me-auto.navbar-nav p {
+        margin-left: 14.5vh;
+        color: var(--background-light);
+    }
+    .time.card-group {
+        display: grid;
+        margin-left: 0vh;
+        justify-content: center;
+    }
+    .card-title {
+        display: grid;
+        justify-items: center;
+    }
+    .time p {
+        margin-left: 0vh; 
+        display: grid;
+        justify-items: center;
+    }
+    img.card-img-top {
+        width: 32vh;
+    }
+
+
+    /* Carrinho */
+    .carrinho {
+        margin-top: 3vh;
+    }
+    .cart_item {
+        width: 100%;
+        padding: 0vh; 
+        padding-right: 0vh; 
+    }
+    .cart_item_image {
+        width: 20vh;
+        margin-top: 10vh;
+        margin-left: -3vh;
+        float: left;
+    }
+    .cart_item_info.d-flex.flex-md-row.flex-column.justify-content-between {
+        display: grid;
+        align-items: center;
+    }
+    .cart_item_name .cart_item_title {
+        margin-left: 7vh;
+    }
+    .cart_item_name .cart_item_text {
+        width: 20vh;
+    }
+}
