@@ -77,7 +77,7 @@ export default function Products({ addToCart }) {
         <Container fluid>
           <div className="caixas card-container row">
             {products.map(product => (
-              <Card key={product.id} style={{ width: '18rem' }} className="card product-card">
+              <Card key={product.id} style={{ width: '35vh' }} className="card product-card">
                 <Card.Body className='carditems'>
                   <Card.Title className='carditems'>{product.title}</Card.Title>
                   <Card.Img variant="top" src={product.img} />
